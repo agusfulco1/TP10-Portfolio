@@ -1,9 +1,9 @@
-import '../Styles/Navbar.css'
 import { Link, Outlet } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import "../Styles/Layout.css"
+export default function NavBar() {
 
-export default function header() {
     return (
         <>
             <div className='navbar'>
@@ -14,8 +14,8 @@ export default function header() {
                             <Nav className="me-auto">
                                 <Nav.Link as={Link} to="/" >Home</Nav.Link>
                                 <Nav.Link as={Link} to="/aboutus">Productos</Nav.Link>
-                                <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
-                                <Nav.Link as={Link} to="/carrito">Carrito</Nav.Link>
+                                <Nav.Link as={Link} to="/creaciones">Creaciones</Nav.Link>
+                                <Nav.Link as={Link} to="/favoritos">Favoritos</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </div>
@@ -24,5 +24,6 @@ export default function header() {
             </div>
             <Outlet />
         </>
+
     )
 }
