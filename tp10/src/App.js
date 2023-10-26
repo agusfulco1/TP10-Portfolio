@@ -10,25 +10,22 @@ import { favoritoContext}  from './Contexts/favoritoContext';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [favorito,setFavorito] = useState([]);
-  const añadirCreacion = (crea) => {
+  const [total,setTotal] = useState(0);
+  /*const añadirCreacion = (crea) => {
     let yaExiste = favorito.findIndex(creacion => creacion.id === crea.id);
-    if(yaExiste === -1) SetCarrito([...favproto, {...crea, cantidad: 1}]);
+    if(yaExiste === -1) setFavorito([...favorito, {...crea}]);
     else {
       setFavorito(favorito.map(creacion => creacion.id === crea.id ? {...creacion, cantidad: creacion.cantidad + 1} : creacion));
     }
   }
 
-  const actualizarCantidad = (crea) => {
-      setFavorito(favorito.map(creacion => creacion.id === crea.id ? {...creacion, cantidad: crea.cantidad} : creacion));
-  }
   const eliminarCreacion = (crea) => {
     console.log("eliminar:", crea)
     setFavorito(
       favorito.filter( creation => creation.id !== crea.id )
-    );}
+    );}*/
   return (
-    <carritoContext.Provider value={{favorito, setFavorito, añadirCreacion, actualizarCantidad, eliminarCreacion}}>    
+    <favoritoContext.Provider value={total}>    
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -40,7 +37,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      </carritoContext.Provider>
+      </favoritoContext.Provider>
   );
 }
 

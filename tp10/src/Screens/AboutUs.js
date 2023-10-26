@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import './AboutUs.css'; // Agrega tus estilos personalizados aquí
+import '../Styles/AboutUs.css'; 
 
 export default function AboutUs() {
     return (

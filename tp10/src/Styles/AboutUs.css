@@ -46,7 +46,7 @@
 .fondo{
   background-color: rgb(23, 180, 180);
 }
-.grupoTexto, .grupoTexto2 , .grupoTexto3, .grupoTexto4{
+.grupoTexto{
     font-size: 40px;
 }
 input {
