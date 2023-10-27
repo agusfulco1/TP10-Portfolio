@@ -7,7 +7,7 @@ export default function NavBar() {
     return (
         <>
             <div className='navbar'>
-                <Navbar expand="lg" className="">
+                <Navbar expand="lg" variant='light'>
                     <div className='container-fluid'>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -20,7 +20,6 @@ export default function NavBar() {
                         </Navbar.Collapse>
                     </div>
                 </Navbar>
-                <Link></Link>
             </div>
             <Outlet />
         </>

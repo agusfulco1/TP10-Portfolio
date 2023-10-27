@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Input from './Input';
+import '../Styles/AboutUs.css'; 
 export default function Contacto() {
 
     return (
@@ -11,32 +13,10 @@ export default function Contacto() {
                 <Col md={9}>
                     <h1 className="titulo-reg">¡Contáctanos!</h1>
                     <Form className="contact-form">
-
-                        <Form.Group controlId="nombre">
-                            <div class="grupoTexto">
-                                <Form.Label>Nombre</Form.Label>
-                                <Form.Control type="text" placeholder="Escribe tu nombre" />
-                            </div>
-                        </Form.Group>
-                        <Form.Group controlId="email">
-                            <div class="grupoTexto">
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control type="email" placeholder="✉  Escribe tu email" />
-                            </div>
-                        </Form.Group>
-                        <Form.Group controlId="telefono">
-                            <div class="grupoTexto">
-                                <Form.Label>Teléfono</Form.Label>
-                                <Form.Control type="tel" placeholder="☏    Escribe tu teléfono" />
-                            </div>
-                        </Form.Group>
-                        <Form.Group controlId="mensaje">
-                            <div class="grupoTexto">
-                                <Form.Label>Mensaje</Form.Label>
-                                <Form.Control type="text" placeholder="Escribe tu mensaje" />
-                            </div>
-
-                        </Form.Group>
+                        <Input id={"nombre"} label={"Nombre"} placeholder={"Escribe tu nombre"} tipo={"text"}></Input>
+                        <Input id={"email"} label={"Email"} placeholder={"✉  Escribe tu email"} tipo={"email"}></Input>
+                        <Input id={"telefono"} label={"Telefono"} placeholder={"Escribe tu telefono"} tipo={"tel"}></Input>
+                        <Input id={"mensaje"} label={"Mensaje"} placeholder={"Escribe tu mensaje"} tipo={"text"}></Input>
                         <Button variant="primary" size="lg" type="submit" className="enviar-btn">
                             Enviar
                         </Button>
@@ -50,7 +30,7 @@ export default function Contacto() {
                     <p>Teléfono: +123456789</p>
                 </Col>
             </Row>
-            
-        </div>
+
+        </div >
     )
 }
