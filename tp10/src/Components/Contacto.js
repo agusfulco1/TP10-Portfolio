@@ -25,10 +25,6 @@ export default function Contacto() {
                         </Button>
                     </Form>
                 </Col>
-                <Col md={3} className="social-media">
-                    <p>Contacto: contacto@example.com</p>
-                    <p>Teléfono: +123456789</p>
-                </Col>
             </Row>
 
         </div >
