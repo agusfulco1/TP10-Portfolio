@@ -20,7 +20,7 @@ export default function Creaciones() {
     return (
         <Container fluid>
              <Row style={{ padding: '2%' }}>
-                    {creaciones.map(creacion => <Col sm={2}><Creacion titulo={creacion.title} img={creacion.imagen} texto={creaciones.descripcion}  id={creacion.id}></Creacion>
+                    {creaciones.map(creacion => <Col sm={2}><Creacion creacion={creacion}></Creacion>
                     </Col>)}
                 </Row>
         </Container>
