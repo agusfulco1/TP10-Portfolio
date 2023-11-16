@@ -4,7 +4,8 @@
     "descripcion":"Este es el TP de banderas, muy bueno la verdad",
     "imagenes":"LautyMono.jpeg",
     "fecha":"2023-06-14",
-    "url": "https://github.com/agusfulco1/TP6---Banderas.git"
+    "url": "https://github.com/agusfulco1/TP6---Banderas.git",
+    "yaExiste": false
 },
 {
     "id": 2,
@@ -12,7 +13,8 @@
     "descripcion":"Este es el TP de citas, muy bueno la verdad",
     "imagenes":"AriPerdido.jpeg",
     "fecha":"2023-05-04",
-    "url": "https://github.com/agusfulco1/TP04---Citas.git"
+    "url": "https://github.com/agusfulco1/TP04---Citas.git",
+    "yaExiste": false
 },
 {
     "id": 3,
@@ -20,61 +22,69 @@
     "descripcion":"Este es el TP de productos version uno, muy bueno la verdad",
     "imagenes":"FrancoGamer.jpeg",
     "fecha":"2023-04-20",
-    "url": "https://github.com/teglus133/TP-Productos.git"
+    "url": "https://github.com/teglus133/TP-Productos.git",
+    "yaExiste": false
 },
 {
     "id": 4,
-    "titulo":"TP6---Banderas",
-    "descripcion":"Este es el TP de banderas, muy bueno la verdad",
-    "imagenes":"",
-    "fecha":"",
-    "url": ""
+    "titulo":"RipioTurismoTEST",
+    "descripcion":"Este es el backend de nuestron proyecto final, muy bueno la verdad",
+    "imagenes":"Gorila.jpeg",
+    "fecha":"2023-05-29",
+    "url": "https://github.com/agusfulco1/RipioTurismoTEST.git",
+    "yaExiste": false
 },
 {
     "id": 5,
-    "titulo":"TP6---Banderas",
-    "descripcion":"Este es el TP de banderas, muy bueno la verdad",
-    "imagenes":"",
-    "fecha":"",
-    "url": ""
+    "titulo":"RipioTurismo---RN",
+    "descripcion":"Este es el frontend de nuestro proyecto final, muy bueno la verdad",
+    "imagenes":"JuliLol.jpeg",
+    "fecha":"2023-08-23",
+    "url": "https://github.com/agusfulco1/RipioTurismo---RN.git",
+    "yaExiste": false
 },
 {
     "id": 6,
-    "titulo":"TP6---Banderas",
-    "descripcion":"Este es el TP de banderas, muy bueno la verdad",
-    "imagenes":"",
-    "fecha":"",
-    "url": ""
+    "titulo":"TP---Personajes",
+    "descripcion":"Este es el TP de personajes, muy bueno la verdad",
+    "imagenes":"FulcoDuro100.0.jpeg",
+    "fecha":"2023-05-19",
+    "url": "https://github.com/agusfulco1/TP---Personajes.git",
+    "yaExiste": false
 },
 {
     "id": 7,
-    "titulo":"TP6---Banderas",
-    "descripcion":"Este es el TP de banderas, muy bueno la verdad",
-    "imagenes":"",
-    "fecha":"",
-    "url": ""
+    "titulo":"Practica-RN",
+    "descripcion":"Este es el TP de practica de react native, muy bueno la verdad",
+    "imagenes":"JuliDuro.jpeg",
+    "fecha":"2023-08-18",
+    "url": "https://github.com/agusfulco1/Practica-RN.git",
+    "yaExiste": false
 },
 {
     "id": 8,
-    "titulo":"TP6---Banderas",
-    "descripcion":"Este es el TP de banderas, muy bueno la verdad",
-    "imagenes":"",
-    "fecha":"",
-    "url": ""
+    "titulo":"TP04---Citas",
+    "descripcion":"Este es el TP de citas, muy bueno la verdad",
+    "imagenes":"MorroDuro1.0.jpeg",
+    "fecha":"2023-05-04",
+    "url": "https://github.com/agusfulco1/TP04---Citas.git",
+    "yaExiste": false
 },
 {
     "id": 9,
-    "titulo":"TP6---Banderas",
-    "descripcion":"Este es el TP de banderas, muy bueno la verdad",
-    "imagenes":"",
-    "fecha":"",
-    "url": ""
+    "titulo":"TPizzas",
+    "descripcion":"Este es el TP de pizzas, muy bueno la verdad",
+    "imagenes":"MorroDuro2.0.jpeg",
+    "fecha":"2023-03-17",
+    "url": "https://github.com/teglus133/TPizzas.git",
+    "yaExiste": false
 },
 {
     "id": 10,
-    "titulo":"TP6---Banderas",
-    "descripcion":"Este es el TP de banderas, muy bueno la verdad",
-    "imagenes":"",
-    "fecha":"",
-    "url": ""
+    "titulo":"TP09_LPF",
+    "descripcion":"Este es el TP final de cuarto año sobre la liga profesional de futbol, muy bueno la verdad",
+    "imagenes":"TeglusPelado.jpeg",
+    "fecha":"2022-11-03",
+    "url": "https://github.com/agusfulco1/TP09_LPF.git",
+    "yaExiste": false
 }]
