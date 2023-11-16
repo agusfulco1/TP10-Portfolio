@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 import {favoritoContext} from '../Contexts/favoritoContext'
 import { useContext } from 'react';
 export default function Creacion({ creacion }) {
-    const objetoFavorito = useContext()
+    const objetoFavorito = useContext(favoritoContext)
     const verificarSiEstaEnCarrito = () => {
         /*console.log(ObjetoCarrito.carrito.length)
         if (ObjetoCarrito.carrito.length > 0) {
@@ -19,9 +19,10 @@ export default function Creacion({ creacion }) {
             }
         }*/
     }
+    console.log(creacion)
     return (
         <Card>
-            <Card.Img variant="top" src={creacion.imagen} style={{ height: "150px" }} />
+            <Card.Img variant="top" src={creacion.imagenes} style={{ height: "150px" }} />
             <Card.Body>
                 <Card.Title>{creacion.titulo}</Card.Title>
                 <Link to={'/Detalle/' + creacion.id} className="btn btn-primary boton">Ver Mas</Link>
