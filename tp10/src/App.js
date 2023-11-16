@@ -12,9 +12,13 @@ import { useEffect, useState } from 'react';
 function App() {
   const [favorito,setFavorito] = useState([]);
   const añadirAFavorito = (crea) => {
+    favorito.estaAñadido = true
     let yaExiste = favorito.findIndex(creacion => creacion.id === crea.id);
-    if(yaExiste === -1) setFavorito([...favorito, {...crea}]);
+    if(yaExiste === -1) {
+      setFavorito([...favorito, {...crea}]);
+    }
     else {
+
       setFavorito(
       favorito.filter( creacion => creacion.id !== crea.id ));
     }

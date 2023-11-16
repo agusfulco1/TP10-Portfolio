@@ -1,7 +1,15 @@
-
+import { Link } from 'react-router-dom'
+import '../Styles/Home.css'
+import Card from 'react-bootstrap/Card';
+import PropTypes  from 'prop-types';
+import {AiFillCheckCircle} from 'react-icons/ai'
+import { IconContext } from "react-icons";
+import { CarritoContext } from '../Context/carritoContext';
+import { useContext } from 'react';
 export default function Creacion({ creacion }) {
+    const {objetoFavorito}= useContext()
     const verificarSiEstaEnCarrito = () => {
-        console.log(ObjetoCarrito.carrito.length)
+        /*console.log(ObjetoCarrito.carrito.length)
         if (ObjetoCarrito.carrito.length > 0) {
             productoCarrito = ObjetoCarrito.carrito.find((product) => product.id === creacion.id)
             if (productoCarrito === undefined) {
@@ -9,7 +17,7 @@ export default function Creacion({ creacion }) {
             } else {
                 return true
             }
-        }
+        }*/
     }
     return (
         <Card>
