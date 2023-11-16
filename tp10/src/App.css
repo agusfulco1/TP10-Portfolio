@@ -1,3 +1,5 @@
 body {
+    background: linear-gradient(30deg, darkblue, black, darkblue, black);
+    color: white;
     font-family: 'Urbanist', sans-serif;
 }
