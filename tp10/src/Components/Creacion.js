@@ -6,7 +6,10 @@ import {AiFillCheckCircle} from 'react-icons/ai'
 import { IconContext } from "react-icons";
 import {favoritoContext} from '../Contexts/favoritoContext'
 import { useContext } from 'react';
+import Button from 'react-bootstrap/Button';
+import { useNavigate } from 'react-router-dom';
 export default function Creacion({ creacion }) {
+    const navigate = useNavigate();
     const objetoFavorito = useContext(favoritoContext)
     const verificarSiEstaEnCarrito = () => {
         /*console.log(ObjetoCarrito.carrito.length)
@@ -25,7 +28,7 @@ export default function Creacion({ creacion }) {
             <Card.Img variant="top" src={creacion.imagenes} style={{ height: "150px" }} />
             <Card.Body>
                 <Card.Title>{creacion.titulo}</Card.Title>
-                <Link to={'/Detalle/' + creacion.id} className="btn btn-primary boton">Ver Mas</Link>
+                <Button onClick={()=> navigate("/verDetalle",creacion)}>Ver mas</Button>
                 {objetoFavorito.favorito.length > 0 ? verificarSiEstaEnCarrito() ? (
                     <IconContext.Provider value={{ color: "green", size: 40, className: "check" }}>
                         <AiFillCheckCircle />
