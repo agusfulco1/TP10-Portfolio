@@ -22,13 +22,13 @@ export default function Creacion({ creacion }) {
             }
         }*/
     }
-    console.log(creacion)
     return (
         <Card>
-            <Card.Img variant="top" src={creacion.imagenes} style={{ height: "150px" }} />
+            <Card.Img variant="top" src={`/images/${creacion.imagenes}`} style={{ height: "150px" }} />
             <Card.Body>
                 <Card.Title>{creacion.titulo}</Card.Title>
-                <Button onClick={()=> navigate("/verDetalle",creacion)}>Ver mas</Button>
+                <Button onClick={()=> navigate("/verDetalle",{state: creacion})} className="botonCreacion">Ver mas</Button>
+                <Button onClick={()=> favoritoContext.añadirAFavorito()} className="botonCreacion">Añadir a favorito</Button>
                 {objetoFavorito.favorito.length > 0 ? verificarSiEstaEnCarrito() ? (
                     <IconContext.Provider value={{ color: "green", size: 40, className: "check" }}>
                         <AiFillCheckCircle />
