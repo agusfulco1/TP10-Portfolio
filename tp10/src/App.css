@@ -2,4 +2,14 @@ body {
     background: linear-gradient(30deg, darkblue, black, darkblue, black);
     color: white;
     font-family: 'Urbanist', sans-serif;
+<<<<<<< Updated upstream
 }
+=======
+   
+        /*background: radial-gradient(ellipse at top, black, darkblue),
+                radial-gradient(ellipse at bottom, black, darkblue);*/
+        background: linear-gradient(30deg, darkblue, black, darkblue, black);
+        margin-bottom: -10px;
+    
+}
+>>>>>>> Stashed changes

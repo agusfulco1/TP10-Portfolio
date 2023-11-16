@@ -15,7 +15,7 @@ export default function Creaciones() {
             })
             .catch(e => {
                 console.log(e)
-            });
+            }); 
     }, []);
     return (
         <Container fluid>

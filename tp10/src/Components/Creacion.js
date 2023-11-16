@@ -28,7 +28,7 @@ export default function Creacion({ creacion }) {
             <Card.Body>
                 <Card.Title>{creacion.titulo}</Card.Title>
                 <Button onClick={()=> navigate("/verDetalle",{state: creacion})} className="botonCreacion">Ver mas</Button>
-                <Button onClick={()=> favoritoContext.añadirAFavorito()} className="botonCreacion">Añadir a favorito</Button>
+                <Button onClick={()=> objetoFavorito.añadirAFavorito(creacion)} className="botonCreacion">Añadir a favorito</Button>
                 {objetoFavorito.favorito.length > 0 ? verificarSiEstaEnCarrito() ? (
                     <IconContext.Provider value={{ color: "green", size: 40, className: "check" }}>
                         <AiFillCheckCircle />
