@@ -1,0 +1,39 @@
+.containerPaginaFavoritos {
+    margin-left: 20px;
+}
+.containerFavorito {
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(129, 120, 214, 0.637);
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+.box2 {
+    margin-left: 70px;
+}
+
+.containerFavorito {
+    width: 100%;
+    border: 0px solid black;
+    height: 25%;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.containerImagen {
+    width: 100%;
+}
+.imagenFavorito {
+    width: 80%;
+    height: 173px;
+    border-radius: 50%;
+}
+.textoFavorito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

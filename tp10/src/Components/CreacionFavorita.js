@@ -1,19 +1,19 @@
-
-export default function CreacionFavorita({ creacion }) {
+import '../Styles/Favoritos.css'
+export default function CreacionFavorita( {creacion }) {
     console.log(creacion)
     return (
-        <div className="containerCarrito">
+        <div className="containerFavorito">
             <div className='row'>
                 <div className='col-md-2'>
                     <div className='containerImagen'>
-                        <img src={creacion.imagenes} className="imagenProducto" alt='no hay imagen'></img>
+                        <img src={`/images/${creacion.imagenes}`} className="imagenFavorito" alt='no hay imagen'></img>
                     </div>
                 </div>
-                <div className='col-md-6 textoCarrito'>
+                <div className='col-md-4 textoFavorito'>
                     <h2>{creacion.titulo}</h2>
                 </div>
-                <div className='col-md-2 textoCarrito'>
-                    <h2>{creacion.fecha}</h2>
+                <div className='col-md-6 textoFavorito'>
+                    <h2>{creacion.fecha}</h2><br/>
                     <h2>{creacion.url}</h2>
                 </div>
             </div>
