@@ -10,22 +10,21 @@ import { favoritoContext}  from './Contexts/favoritoContext';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [yaExiste, setYaExiste] = useState(false)
   const [favorito,setFavorito] = useState([]);
   const añadirAFavorito = (crea) => {
-    crea.estaAñadido = true
-    let yaExiste = favorito.findIndex(creacion => creacion.id === crea.id);
-    if(yaExiste === -1) {
-      setFavorito([...favorito, {...crea}]);
-    }
-    else {
-
-      setFavorito(
-      favorito.filter( creacion => creacion.id !== crea.id ));
-    }
+    if (!crea.yaExiste) {
+      let creacion = crea
+      creacion.yaExiste = true
+      setFavorito([...favorito , creacion])
+  }
+  else {
+      setFavorito(favorito.map((product) => {
+          return product
+      }))
+  }
   }
   return (
-    <favoritoContext.Provider value={{favorito, setFavorito, añadirAFavorito, yaExiste, setYaExiste}}>    
+    <favoritoContext.Provider value={{favorito, setFavorito, añadirAFavorito}}>    
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
