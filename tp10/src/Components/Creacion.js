@@ -4,10 +4,10 @@ import Card from 'react-bootstrap/Card';
 import PropTypes  from 'prop-types';
 import {AiFillCheckCircle} from 'react-icons/ai'
 import { IconContext } from "react-icons";
-import { CarritoContext } from '../Context/carritoContext';
+import {favoritoContext} from '../Contexts/favoritoContext'
 import { useContext } from 'react';
 export default function Creacion({ creacion }) {
-    const {objetoFavorito}= useContext()
+    const objetoFavorito = useContext()
     const verificarSiEstaEnCarrito = () => {
         /*console.log(ObjetoCarrito.carrito.length)
         if (ObjetoCarrito.carrito.length > 0) {
@@ -25,7 +25,7 @@ export default function Creacion({ creacion }) {
             <Card.Body>
                 <Card.Title>{creacion.titulo}</Card.Title>
                 <Link to={'/Detalle/' + creacion.id} className="btn btn-primary boton">Ver Mas</Link>
-                {ObjetoCarrito.carrito.length > 0 ? verificarSiEstaEnCarrito() ? (
+                {objetoFavorito.favorito.length > 0 ? verificarSiEstaEnCarrito() ? (
                     <IconContext.Provider value={{ color: "green", size: 40, className: "check" }}>
                         <AiFillCheckCircle />
                     </IconContext.Provider>

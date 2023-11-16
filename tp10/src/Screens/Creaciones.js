@@ -1,7 +1,8 @@
 import '../Styles/Home.css'
 import axios from 'axios';
-import { useState, useEffect, useContext, Container } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { useState, useEffect, useContext } from 'react';
+import { Row, Col} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import Creacion from '../Components/Creacion';
 
 export default function Creaciones() {
