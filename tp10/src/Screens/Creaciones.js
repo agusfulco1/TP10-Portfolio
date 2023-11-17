@@ -10,13 +10,13 @@ export default function Creaciones() {
     useEffect(() => {
         axios.get('http://localhost:3000/creaciones.json')
             .then(res => {
-                console.log(res)
                 setCreaciones(res.data)
             })
             .catch(e => {
                 console.log(e)
             }); 
     }, []);
+
     return (
         <Container fluid>
              <Row style={{ padding: '2%' }}>

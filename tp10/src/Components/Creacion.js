@@ -8,19 +8,19 @@ import {favoritoContext} from '../Contexts/favoritoContext'
 import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 export default function Creacion({ creacion }) {
     const navigate = useNavigate();
     const objetoFavorito = useContext(favoritoContext)
-    const verificarSiEstaEnCarrito = () => {
-        /*console.log(ObjetoCarrito.carrito.length)
-        if (ObjetoCarrito.carrito.length > 0) {
-            productoCarrito = ObjetoCarrito.carrito.find((product) => product.id === creacion.id)
-            if (productoCarrito === undefined) {
+    const verificarSiEstaEnFavorito = () => {
+        if (objetoFavorito.favorito.length > 0) {
+            let creacionFavorita = objetoFavorito.favorito.find((creation) => creation.id === creacion.id)
+            if (creacionFavorita === undefined) {
                 return false
             } else {
                 return true
             }
-        }*/
+        }
     }
     return (
         <Card>
@@ -28,8 +28,8 @@ export default function Creacion({ creacion }) {
             <Card.Body>
                 <Card.Title>{creacion.titulo}</Card.Title>
                 <Button onClick={()=> navigate("/verDetalle",{state: creacion})} className="botonCreacion">Ver mas</Button>
-                <Button onClick={()=> objetoFavorito.añadirAFavorito(creacion)} className="botonCreacion">Añadir a favorito</Button>
-                {objetoFavorito.favorito.length > 0 ? verificarSiEstaEnCarrito() ? (
+                <Button onClick={()=> objetoFavorito.añadirAFavorito(creacion)} className="botonFavorito"><FavoriteIcon style={{color: "#0098DF"}} /></Button>
+                {objetoFavorito.favorito.length > 0 ? verificarSiEstaEnFavorito() ? (
                     <IconContext.Provider value={{ color: "green", size: 40, className: "check" }}>
                         <AiFillCheckCircle />
                     </IconContext.Provider>

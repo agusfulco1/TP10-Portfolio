@@ -7,3 +7,15 @@
 .botonCreacion {
     margin-left: 2px;
 }
+.botonFavorito {
+    background-color: transparent;
+    border-color: transparent;
+}
+.botonFavorito:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.botonFavorito:active:not(.btn-check) {
+    background-color: transparent;
+    border-color: transparent;  
+}
