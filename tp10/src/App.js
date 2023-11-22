@@ -12,13 +12,13 @@ import { useEffect, useState } from 'react';
 function App() {
   const [favorito,setFavorito] = useState([]);
   const añadirAFavorito = (crea) => {
-    console.log(crea.yaExiste)
-    if (!crea.yaExiste) {
-      let creacion = crea
-      creacion.yaExiste = true
-      setFavorito([...favorito , creacion])
+    let creacionRepetida = favorito.filter((creacion) => creacion.id === crea.id)
+    console.log(creacionRepetida)
+    if (creacionRepetida === undefined) {
+      setFavorito(...favorito, crea)
+    } 
+    
   }
-}
   return (
     <favoritoContext.Provider value={{favorito, setFavorito, añadirAFavorito}}>    
     <BrowserRouter>
