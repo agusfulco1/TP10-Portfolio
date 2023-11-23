@@ -3,8 +3,9 @@
 }
 .containerFavorito {
     width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgba(129, 120, 214, 0.637);
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 15px;
+    /*background-color: linear-gradient(60deg, darkblue, rgb(20, 21, 24), darkblue, rgb(20, 21, 24));*/
+    background-color: rgba(109, 109, 109, 0.247);
     margin-bottom: 15px;
     border-radius: 30px;
 }
@@ -25,7 +26,8 @@
 .imagenFavorito {
     width: 80%;
     height: 173px;
-    border-radius: 50%;
+    border-radius: 25%;
+    object-fit: cover;
 }
 .textoFavorito {
     display: flex;

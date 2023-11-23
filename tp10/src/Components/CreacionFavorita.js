@@ -1,6 +1,5 @@
 import '../Styles/Favoritos.css'
 export default function CreacionFavorita( {creacion }) {
-    console.log(creacion)
     return (
         <div className="containerFavorito">
             <div className='row'>

@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(30deg, darkblue, black, darkblue, black);
+    background: linear-gradient(60deg, darkblue, rgb(20, 21, 24), darkblue, rgb(20, 21, 24));
     color: white;
     font-family: 'Urbanist', sans-serif;
 }
