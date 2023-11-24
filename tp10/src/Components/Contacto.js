@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Input from './Input';
-import '../Styles/AboutUs.css'; 
+import '../Styles/Layout.css'; 
 export default function Contacto() {
 
     return (
