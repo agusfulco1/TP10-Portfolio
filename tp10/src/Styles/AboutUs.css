@@ -1,0 +1,14 @@
+.img{
+    width: 25%;
+    height: 250px;
+}
+.containerAbout {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+    
+}
+.lista {
+    list-style: none;
+}

@@ -18,29 +18,46 @@ export default function AboutUs() {
             <h1>CUIDADO CON EL EXCESO DE FACHA!!!!!</h1>
 
             <h2>Integrantes:</h2>
-            <ul>
+            <ul className='lista'>
                 <li>
-                    <img/>
-                    <strong>Agustin Fulco</strong><br></br>
-                    Email: <a href="mailto:agustin.nulco@example.com">agustin.fulco@gmail.com</a><br></br>
-                    Teléfono: +1 (555) 123-4567<br></br>
-                    <img src='https://experienciasdeunachica.files.wordpress.com/2015/05/807.jpg' width="600px" height="400px"></img>
+                    <div className='containerAbout'>
+                        <img src='https://experienciasdeunachica.files.wordpress.com/2015/05/807.jpg' className='img'></img>
+                        <div className='containerAbout2'>
+                            <h2><strong>Agustin Fulco</strong></h2><br></br>
+                            <h2> Email: <a href="mailto:agustin.nulco@example.com">agustin.fulco@gmail.com</a></h2><br></br>
+                            <h2>Teléfono: +1 (555) 123-4567<br></br></h2>
+                        </div>
+                        
+                    </div>
                 </li>
-                     
+
                 <li>
-                    <img/>
-                    <strong>Tiago Glusman</strong><br></br>
-                    Email: <a href="mailto:teglus@example.com">teglus@gmail.com</a><br></br>
-                    Teléfono: +1 (555) 234-5678<br></br>
-                    <img src='https://www.ole.com.ar/2017/12/07/rJUZhlwZM_860x575__1.jpg' width="600px" height="400px"></img>
+                    <div className='containerAbout'>
+                        <img src='https://www.ole.com.ar/2017/12/07/rJUZhlwZM_860x575__1.jpg' className='img'></img>
+                        <div className='containerAbout2'>
+                        <h2><strong>Tiago Glusman</strong></h2><br></br>
+                        <h2> Email: <a href="mailto:teglus@example.com">teglus@gmail.com</a> </h2><br></br>
+                        <h2> Teléfono: +1 (555) 234-5678</h2><br></br>
+                        </div>
+                    </div>
+                    
+                    
+                    
                 </li>
-                 <li>
-                    <strong>Julian Caraballo</strong><br></br>
-                    Email: <a href="mailto:julian.caraballo@example.com">julian.caraballo@gmail.com</a><br></br>
-                    Teléfono: +1 (555) 345-6789<br></br>
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfEH-rpjCil6NU7VpR-U5NUN-ZBpvpCF5N-Q&usqp=CAU' width="600px" height="400px"></img>
+                <li>
+                    <div className='containerAbout'>
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfEH-rpjCil6NU7VpR-U5NUN-ZBpvpCF5N-Q&usqp=CAU' className='img'></img>
+                        <div className='containerAbout2'>
+                            <h2><strong>Julian Caraballo</strong></h2><br></br>
+                            <h2>Email: <a href="mailto:julian.caraballo@example.com">julian.caraballo@gmail.com</a></h2><br></br>
+                            <h2>Teléfono: +1 (555) 345-6789</h2><br></br>
+                        </div>
+                    </div>
+                    
+                    
                 </li>
             </ul>
         </div>
-            )
+
+    )
 }
